@@ -6,7 +6,7 @@
 
 ### Class 구성
 
--**main**
+- **main**
 
 - **controller**
   - hello : 시작 콘솔
