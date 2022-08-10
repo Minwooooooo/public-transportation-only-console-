@@ -9,7 +9,7 @@
 -**main**
 
 - **controller**
-  - hello : 시작과 동시에 나오는 콘솔
+  - hello : 시작 콘솔
   - info : 대중교통 정보를 확인하고 수정하기위해 Taxi 클래스나 Bus 클래스와 연결하는 콘솔
   - regist : 대중교통을 등록하기 위한 콘솔
 
@@ -64,7 +64,7 @@ public int hello(){
 
 * 현재수입은 이후 하차시 갱신
 
-
+**Bus**
 
 
 
