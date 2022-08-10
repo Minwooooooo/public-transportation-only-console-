@@ -6,23 +6,24 @@
 
 ### Class 구성
 
+
 - **main**
 
 - **controller**
-  - hello : 시작 콘솔
-  - info : 대중교통 정보를 확인하고 수정하기위해 Taxi 클래스나 Bus 클래스와 연결하는 콘솔
-  - regist : 대중교통을 등록하기 위한 콘솔
+  - hello() : 시작 콘솔 호출 메소드
+  - info() : 대중교통 정보를 확인하고 수정하기위해 Taxi 클래스나 Bus 클래스와 연결하는 콘솔
+  - regist() : 대중교통을 등록하기 위한 콘솔
 
 - **Taxi**
-  - Taxi_regist : 택시 등록(기본형으로 등록)
-  - Taxi_edit : 택시 정보 수정 및 승하차 처리
-  - Taxi_info : 등록된 모든 택시정보 열람
-  - Taxi_receipt : 출발지와 목적지 선택 및 이동 거리에 따른 택시비 계산
+  - Taxi_regist() : 택시 등록(기본형으로 등록)
+  - Taxi_edit() : 택시 정보 수정 및 승하차 처리
+  - Taxi_info() : 등록된 모든 택시정보 열람
+  - Taxi_receipt() : 출발지와 목적지 선택 및 이동 거리에 따른 택시비 계산
 
 - **Bus**
-  - Bus_regist : 버스 등록(기본형+현재승객)
-  - Bus_edit : 택시 정보 수정
-  - Bus_info : 등록된 모든 버스정보 열람
+  - Bus_regist() : 버스 등록(기본형+현재승객)
+  - Bus_edit() : 택시 정보 수정
+  - Bus_info() : 등록된 모든 버스정보 열람
   
 ### 주요 기능
 
@@ -48,6 +49,7 @@ public int hello(){
         return temp_hello;
     }
 ```
+3. ArrayList를 통하여 등록 대중교통을 DB화
 
 ### 세부 사항
 **Taxi**
@@ -62,7 +64,7 @@ public int hello(){
 |||- 운행거리 : 7.7km|
 |||- 현재 수입 : 0원|
 
-* 현재수입은 이후 하차시 갱신
+* 택시의 현재수입은 이후 하차시 갱신
 
 **Bus**
 
